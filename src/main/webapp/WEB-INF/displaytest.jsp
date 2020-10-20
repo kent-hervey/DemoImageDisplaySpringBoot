@@ -4,6 +4,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>  
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,42 +16,54 @@
 <body>
 
 		<div class="container">
-	<h1>Display Testx</h1>
-	<h2>Ugh</h2>
-	<h3>${abcd}</h3>
-	<h4>${displayOut}</h4>
-	
-	
-	9507 Wells Road, Wylie, TX cc
-	
-	
-	
-	
-    <br>
- 
-    <img
-        src="${pageContext.request.contextPath}/resources/images/sampleranchpict.JPG" />
-        
-        <br>
-    
-    <img    src="/resources/static/images/sampleranchpict.JPG">
- 
-    <br>
+	<h1>Display Test</h1>
 
-    <img
-        src="${pageContext.request.contextPath}/resources/images/sampleranchpict.JPG" />
+	<h4>Below files are located in src > main > resources > images
+		<ul>
+			<li>abc.jpg</li>
+			<li>sampleranchpict.jpg</li>
+		
+		</ul>
+	</h4>
+
+	<br>
+
+	1 &lt;img src=&quot&#36;{pageContext.request.contextPath}/images/abc.jpg&quot; width=&quot;50&quot; height=&quot;40&quot;/&gt;
 	
 	<br>
-	
-<img src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBJSdYHjAQ385JTx27dSusUTHAc3Vz8Gyc&q=9507+wells+rd+wylie+TX"/>
-	
-	
-	
 
+    <img src="${pageContext.request.contextPath}/images/abc.jpg" width="50" height="40"/>
+	
+	<br>
     
+    2 &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg&quot;  alt=&quot;orange bird&quot; width=&quot;50&quot; height=&quot;40&quot;/&gt;
     
+    <br>
     
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"  alt="orange bird" width="50" height="40"/>
+    
+    <br>
+    
+    3 &lt;img src=&quot;/images/abc.jpg&quot; width=&quot;50&quot; height=&quot;40&quot;&gt;
+    
+    <br>
+    
+    <img src="/images/abc.jpg" width="50" height="40">
+    
+    <br>
+    
+    4 &lt;img src =&quot;/images/sampleranchpict.jpg&quot; width=&quot;50&quot; height=&quot;40&quot;&gt;
+    
+    <br>
 
+	<img src ="/images/sampleranchpict.jpg" width="50" height="40">
+	
+	 <br>
+	 
+	 <!-- <img alt="samplea" src="<spring:url value="/images/samplea.jpg"/>" width="200"> -->
+	
+	
+	
 
 	</div><!--end container-->
 	
